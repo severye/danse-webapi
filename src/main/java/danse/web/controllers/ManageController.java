@@ -53,7 +53,7 @@ public class ManageController {
 	       return "Hello " + user.getName();
 	   }
 	
-	@RequestMapping(value = "/getAllTypes", method = RequestMethod.GET)
+	@RequestMapping(value = "/types", method = RequestMethod.GET)
 	public Reponse getAllTypes(HttpServletResponse response) {
 		// état de l'application
 		if (messages != null) {
@@ -66,7 +66,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/getAllKinds", method = RequestMethod.GET)
+	@RequestMapping(value = "/kinds", method = RequestMethod.GET)
 	public Reponse getAllKinds(HttpServletResponse response) {
 		// état de l'application
 		if (messages != null) {
@@ -79,7 +79,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/getAllColours", method = RequestMethod.GET)
+	@RequestMapping(value = "/colours", method = RequestMethod.GET)
 	public Reponse getAllColours(HttpServletResponse response) {
 		manageCorsController.getAllColours(response);
 		// état de l'application
@@ -93,7 +93,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/getAllSizes", method = RequestMethod.GET)
+	@RequestMapping(value = "/sizes", method = RequestMethod.GET)
 	public Reponse getAllSizes(HttpServletResponse response) {
 		// état de l'application
 		if (messages != null) {
@@ -106,7 +106,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/getAllBoxes", method = RequestMethod.GET)
+	@RequestMapping(value = "/boxes", method = RequestMethod.GET)
 	public Reponse getAllBoxes(HttpServletResponse response) {
 		// état de l'application
 		if (messages != null) {
@@ -119,7 +119,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/getAllProducts", method = RequestMethod.GET)
+	@RequestMapping(value = "/products", method = RequestMethod.GET)
 	public Reponse getAllProducts(HttpServletResponse response) {
 		// état de l'application
 		if (messages != null) {
@@ -132,7 +132,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/getAllSizeQuantities", method = RequestMethod.GET)
+	@RequestMapping(value = "/sizeQuantities", method = RequestMethod.GET)
 	public Reponse getAllSizeQuantities(HttpServletResponse response) {
 		// état de l'application
 		if (messages != null) {
@@ -145,7 +145,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/getAllCategories", method = RequestMethod.GET)
+	@RequestMapping(value = "/categories", method = RequestMethod.GET)
 	public Reponse getAllCategories(HttpServletResponse response) {
 		// état de l'application
 		if (messages != null) {
@@ -160,7 +160,7 @@ public class ManageController {
 	
 	
 	
-	@RequestMapping(value = "/addProduct", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
+	@RequestMapping(value = "/products", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
 	public Reponse addProduct(@RequestBody PostAddProduct post) {
 		// état de l'application
 		if (messages != null) {
@@ -474,7 +474,7 @@ public class ManageController {
 		}
 		return new Reponse(0, null);
 	}
-	@RequestMapping(value = "/addOrUpdateType", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
+	@RequestMapping(value = "/types", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
 	public Reponse updateType(@RequestBody PostAddName post) {
 		// état de l'application
 		if (messages != null) {
@@ -492,7 +492,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/addOrUpdateKind", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
+	@RequestMapping(value = "/kinds", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
 	public Reponse updateKind(@RequestBody PostAddName post) {
 		// état de l'application
 		if (messages != null) {
@@ -511,7 +511,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/addOrUpdateColour", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
+	@RequestMapping(value = "/colours", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
 	public Reponse updateColour(@RequestBody PostAddColour post) {
 		// état de l'application
 		if (messages != null) {
@@ -531,7 +531,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/addOrUpdateSize", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
+	@RequestMapping(value = "/sizes", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
 	public Reponse updateSize(@RequestBody PostAddName post) {
 		// état de l'application
 		if (messages != null) {
@@ -549,7 +549,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/addOrUpdateCategory", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
+	@RequestMapping(value = "/categories", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
 	public Reponse updateCategorie(@RequestBody PostAddName post) {
 		// état de l'application
 		if (messages != null) {
@@ -567,7 +567,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/addOrUpdateBox", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
+	@RequestMapping(value = "/boxes", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
 	public Reponse updateBox(@RequestBody PostAddName post) {
 		// état de l'application
 		if (messages != null) {
@@ -585,7 +585,7 @@ public class ManageController {
 		}
 	}
 	
-	@RequestMapping(value = "/addOrUpdateProduct", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
+	@RequestMapping(value = "/produc", method = RequestMethod.POST, consumes = "application/json; charset=UTF-8")
 	public Reponse updateProduct(@RequestBody PostAddProduct post) {
 		// état de l'application
 		if (messages != null) {
